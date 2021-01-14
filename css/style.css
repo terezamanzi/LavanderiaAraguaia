@@ -1,0 +1,153 @@
+@import url(/css/_variaveis.css);
+
+body{
+    background-color: rgb(240, 250, 255);
+}
+
+header{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+nav li{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: var(--fonte1);
+    font-weight: 400;
+    color: var(--vermelho);
+    font-size: 1.1em;
+}
+
+.nav__item{
+    position: relative;
+    margin-left: 3.75rem;
+}
+
+.nav__item--ativo::before{
+    content: "";
+
+    width: 100%;
+    height: .15rem;
+
+    background-color: var(--azul);
+
+    position: absolute;
+    bottom: -.5rem;
+
+    border-radius: .625rem;
+
+    transition: .5s;
+}
+    
+
+main{
+    margin-top: 3%;
+}
+
+#corpo{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+
+}
+
+#items-wrapper{
+}
+
+#items{
+    display: flex;
+
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;    
+}
+
+
+.item{
+    flex: none;
+    width: 100%;
+    height: 50vh;
+    scroll-snap-align: start;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quemsomos{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--fonte1);
+    color: var(--preto);
+}
+
+#quem > h1{
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+#quem > p{
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#cartao{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+
+
+
+.mapa__conteudo{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+#endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--fonte1);
+    margin-top: 50px;
+    background-color: var(--vermelho);
+    height: 35px;
+    border-radius: 0 0px 15px 15px;
+}
+
+#tereza{
+    font-family: var(--fonte1);
+    text-align: center;
+    margin-top: 15px;
+}

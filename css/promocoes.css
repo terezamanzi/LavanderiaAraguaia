@@ -1,0 +1,39 @@
+@import url(_variaveis.css);
+
+main{
+    margin-top: 3%;
+}
+
+#corpo{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+
+#items{
+    display: flex;
+
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;    
+}
+
+
+.item{
+    flex: none;
+    width: 100%;
+    height: 50vh;
+    scroll-snap-align: start;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto{
+    color: var(--preto);
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+:root{
+    --fonte1: "Open Sans", sans-serif; 
+    --vermelho: #d70000;
+    --azul: #1f177e;
+    --preto: #1e1e1e;
+    --verde: #00c19d;
+    padding: 50px;
+}

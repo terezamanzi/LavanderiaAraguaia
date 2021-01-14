@@ -1,0 +1,34 @@
+@import url(_variaveis.css);
+
+.input-padrao{
+    display: flex;
+    font-family: var(--fonte1);
+}
+
+
+main > form{
+    display: grid;
+    font-family: var(--fonte1);
+    line-height: 1.5;
+    color: var(--preto);
+    font-size: 0.9em;
+}
+
+.mapa__conteudo{
+    display: flex;
+    margin-left: 50px;
+    width: 60%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enviar{
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 0 0 15px 15px;
+}
